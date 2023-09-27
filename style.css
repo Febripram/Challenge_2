@@ -6,39 +6,23 @@
 }
 
 .navigation {
-
   top: 0;
-  position: fixed;
   width: 100%;
-  z-index: 1;
 }
 
 .navbar {
-
   background-color: #DEF1DF;
+}
+
+.home {
+  background-color: #DEF1DF;
+  padding-top: 50px;
 }
 
 .register {
   border: 1px solid limegreen;
   border-radius: 5px;
   background-color: limegreen;
-}
-
-.home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home-text {
-  width: 568px;
-}
-
-.home-1 {
-  background-color: #DEF1DF;
-  padding-top: 100px;
-  width: 1440px;
-  height: 500px;
 }
 
 .button-car {
@@ -50,13 +34,18 @@
   padding: 10px;
 }
 
-.ourService-1 {
-  padding-top: 70px;
-}
-
 .car-img {
   width: 704px;
   height: 407px;
+}
+
+#ourService{
+  padding-top: 70px;
+}
+
+.ourService{
+  display: flex;
+  justify-content: center;
 }
 
 .ul-list {
@@ -71,35 +60,19 @@
 
 .whyUs-1 {
   padding-top: 100px;
-  padding-left: 120px;
 }
 
-.whyUs-section {
-  border: 2px solid black;
 
-}
 
-.whyUs-section h3 {
-  font-size: 24px;
-}
-
-.whyUs-section h5 {
-  font-size: 16px;
-}
-
-.card-container {
-  display: flex;
-  margin-right: 100px;
+.card {
+  margin-right: 20px;
+  width: 15rem;
 }
 
 .card-img-top {
-  width: 64px;
+  width: 60px;
   height: 64px;
   padding: 24px 0 0 24px;
-}
-
-.card {
-  margin-right: 24px;
 }
 
 .testimonial {
@@ -242,11 +215,21 @@
   font-size: 14px;
 }
 
-@media only screen and (max-width: 870px) {
-  .faq {
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 767px) {
+  .whyUs-card{
+    justify-content: center;
   }
 
+  .text{
+margin-bottom: 24px;
+  }
   
 }
+
+@media screen and (max-width: 1000px) {
+  .faq-u{
+    display: table-column;
+
+  }
+}
+
